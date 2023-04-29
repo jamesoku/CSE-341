@@ -12,14 +12,12 @@ GET http://localhost:3000/contacts/644c5744949d7403167690de HTTP/1.1
 ###
 GET http://localhost:3000/contacts/644c5781949d74031676aa39 HTTP/1.1
 ###
-https://jamesoku-cse-341.onrender.com/contacts HTTP/1.1
-###
 
-https://jamesoku-cse-341.onrender.com/contacts/644c344e949d740316671763 HTTP/1.1
+GET https://jamesoku-cse-341.onrender.com/contacts HTTP/1.1
 ###
-https://jamesoku-cse-341.onrender.com/contacts/644c344e949d740316671763 HTTP/1.1
+GET https://jamesoku-cse-341.onrender.com/contacts/644c344e949d740316671763 HTTP/1.1
 ###
-https://jamesoku-cse-341.onrender.com/contacts/644c344e949d740316671763 HTTP/1.1
+GET https://jamesoku-cse-341.onrender.com/contacts/644c5744949d7403167690de HTTP/1.1
 ###
-https://jamesoku-cse-341.onrender.com/contacts/644c344e949d740316671763 HTTP/1.1
+GET https://jamesoku-cse-341.onrender.com/contacts/644c5781949d74031676aa39 HTTP/1.1
 ###
