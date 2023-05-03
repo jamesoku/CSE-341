@@ -1,17 +1,22 @@
 const express = require("express");
 const router = express.Router();
+const bodyParser = require("body-parser");
 const Contact = require("../models/contact");
+router.use(bodyParser.urlencoded({ extended: false }));
+router.use(bodyParser.json());
+const concontrollercontact = require("../controllers/contactscon");
 
 // GET all contacts
-router.get("/", async (req, res) => {
-  const contacts = await Contact.find();
-  res.json(contacts);
-});
+router.get("/", concontrollercontact.getallcontacts);
 
 // GET a single contact by id
-router.get("/:id", async (req, res) => {
-  const contact = await Contact.findById(req.params.id);
-  res.json(contact);
-});
+router.get("/:id", concontrollercontact.getcontact);
+
+//
+router.post("/", concontrollercontact.createcontact);
+
+router.put("/:id");
+
+router.delete("/:id");
 
 module.exports = router;
