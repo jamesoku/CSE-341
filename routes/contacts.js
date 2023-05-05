@@ -15,8 +15,8 @@ router.get("/:id", concontrollercontact.getcontact);
 //
 router.post("/", concontrollercontact.createcontact);
 
-router.put("/:id");
+router.put("/:id", concontrollercontact.updatecontact);
 
-router.delete("/:id");
+router.delete("/:id", concontrollercontact.deletecontact);
 
 module.exports = router;

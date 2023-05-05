@@ -32,4 +32,37 @@ concontrollercontact.createcontact = async (req, res) => {
   }
 };
 
+concontrollercontact.updatecontact = async (req, res) => {
+  try {
+    const { firstName, lastName, email, favoriteColor, birthday } = req.body;
+    if (!firstName || !lastName || !email || !favoriteColor || !birthday) {
+      return res.status(400).json({ message: "All fields are required" });
+    }
+    const updatedContact = await Contact.findByIdAndUpdate(
+      req.params.id,
+      { firstName, lastName, email, favoriteColor, birthday },
+      { new: true }
+    );
+    if (!updatedContact) {
+      return res.status(404).json({ message: "Contact not found" });
+    }
+    res.status(200).json({ message: "Contact updated successfully" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+
+concontrollercontact.deletecontact = async (req, res) => {
+  try {
+    const deletedContact = await Contact.findByIdAndDelete(req.params.id);
+    if (!deletedContact) {
+      return res.status(404).json({ message: "Contact not found" });
+    }
+    res.status(200).json({ message: "Contact deleted successfully" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
 module.exports = concontrollercontact;
