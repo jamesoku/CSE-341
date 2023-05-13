@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "jamesoku-cse-341.onrender.com/",
   "servers": [
     {
       "url": "jamesoku-cse-341.onrender.com/"
