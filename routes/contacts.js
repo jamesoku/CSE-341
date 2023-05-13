@@ -9,11 +9,10 @@ const concontrollercontact = require("../controllers/contactscon");
 // GET all contacts
 router.get("/", concontrollercontact.getallcontacts);
 
+router.post("/", concontrollercontact.createcontact);
+
 // GET a single contact by id
 router.get("/:id", concontrollercontact.getcontact);
-
-//
-router.post("/", concontrollercontact.createcontact);
 
 router.put("/:id", concontrollercontact.updatecontact);
 

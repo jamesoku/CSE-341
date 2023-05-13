@@ -29,13 +29,13 @@ Content-Type: application/json
 {
     "firstName":"ler",
     "lastName":"Wver",
-    "email":"Ashler@gmail.cc",
+    "email":"Asr@gmail.cc",
     "favoriteColor":"green",
     "birthday":"06/16/2001"
 }
 ###
-
-PUT  http://localhost:3000/contacts/644c344e949d740316671763 HTTP/1.1
+//
+PUT  http://localhost:3000/contacts/64558ba8c231b86ae4362015 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -46,6 +46,34 @@ Content-Type: application/json
     "birthday":"06/16/2001"
 }
 ###
-DELETE  http://localhost:3000/contacts/644c344e949d740316671763 HTTP/1.1
+DELETE  http://localhost:3000/contacts/64558ba8c231b86ae4362015 HTTP/1.1
 Content-Type: application/json
 
+
+// render
+###
+POST https://jamesoku-cse-341.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"ler",
+    "lastName":"Wver",
+    "email":"Ashler@gmail.cc",
+    "favoriteColor":"green",
+    "birthday":"06/16/2001"
+}
+###
+
+PUT  https://jamesoku-cse-341.onrender.com/contacts/64558bfd37464fff5dada13d HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"new",
+    "lastName":"new",
+    "email":"new@gmail.cc",
+    "favoriteColor":"blue",
+    "birthday":"06/16/2001"
+}
+###
+DELETE  https://jamesoku-cse-341.onrender.com/contacts/64558bfd37464fff5dada13d HTTP/1.1
+Content-Type: application/json
