@@ -5,7 +5,15 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "https://jamesoku-cse-341.onrender.com/",
+  "host": "localhost:3000",
+  "servers": [
+    {
+      "url": "jamesoku-cse-341.onrender.com/"
+    },
+    {
+      "url": "localhost:3000"
+    }
+  ],
   "basePath": "/",
   "schemes": [
     "http"

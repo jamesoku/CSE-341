@@ -5,7 +5,14 @@ const doc = {
     title: "My API",
     description: "Description",
   },
-  host: "https://jamesoku-cse-341.onrender.com/",
+  servers: [
+    {
+      url: "jamesoku-cse-341.onrender.com/",
+    },
+    {
+      url: "localhost:3000",
+    },
+  ],
   schemes: ["http"],
 };
 
