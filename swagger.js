@@ -7,7 +7,7 @@ const doc = {
   },
   servers: [
     {
-      url: "jamesoku-cse-341.onrender.com/",
+      url: "jamesoku-cse-341.onrender.com",
     },
     {
       url: "localhost:3000",

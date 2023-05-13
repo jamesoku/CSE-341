@@ -5,10 +5,10 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "jamesoku-cse-341.onrender.com/",
+  "host": "jamesoku-cse-341.onrender.com",
   "servers": [
     {
-      "url": "jamesoku-cse-341.onrender.com/"
+      "url": "jamesoku-cse-341.onrender.com"
     },
     {
       "url": "localhost:3000"
